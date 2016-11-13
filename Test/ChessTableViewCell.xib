@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="IWR-rg-2n2" customClass="ChessTableViewCell" customModule="Test" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="IWR-rg-2n2" customClass="ChessTableViewCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IWR-rg-2n2" id="frD-X4-qMF">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="224.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-FX-veH">
-                        <rect key="frame" x="8" y="53" width="359" height="65"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-FX-veH">
+                        <rect key="frame" x="8" y="53" width="359" height="88.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,6 +34,19 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JoD-ig-19o">
+                        <rect key="frame" x="0.0" y="155" width="375" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="0fW-ll-ikC"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L0T-a1-Cn1">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ffQ-FX-veH" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leadingMargin" id="9Es-b3-mWs"/>
@@ -41,14 +54,18 @@
                     <constraint firstItem="ffQ-FX-veH" firstAttribute="top" secondItem="NQb-hD-giz" secondAttribute="bottom" constant="15" id="QoK-gA-vUS"/>
                     <constraint firstItem="NQb-hD-giz" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leadingMargin" id="TVR-vL-XWA"/>
                     <constraint firstItem="NQb-hD-giz" firstAttribute="trailing" secondItem="frD-X4-qMF" secondAttribute="trailingMargin" id="WjL-eb-i4T"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ffQ-FX-veH" secondAttribute="bottom" constant="8.5" id="fTA-aH-VKO"/>
+                    <constraint firstItem="JoD-ig-19o" firstAttribute="top" secondItem="ffQ-FX-veH" secondAttribute="bottom" constant="13.5" id="gVX-DW-Ltf"/>
+                    <constraint firstItem="JoD-ig-19o" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leading" id="iSa-WQ-mTf"/>
+                    <constraint firstAttribute="trailing" secondItem="JoD-ig-19o" secondAttribute="trailing" id="kMU-uh-ox1"/>
                     <constraint firstItem="NQb-hD-giz" firstAttribute="top" secondItem="frD-X4-qMF" secondAttribute="topMargin" constant="9" id="r3h-bt-cz2"/>
+                    <constraint firstAttribute="bottom" secondItem="JoD-ig-19o" secondAttribute="bottom" constant="9.5" id="yM1-Wq-woe"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="collectionView" destination="JoD-ig-19o" id="IKo-Y9-eER"/>
                 <outlet property="label" destination="ffQ-FX-veH" id="mV0-2I-O50"/>
             </connections>
-            <point key="canvasLocation" x="-144.5" y="-252.5"/>
+            <point key="canvasLocation" x="-144.5" y="-207.5"/>
         </tableViewCell>
     </objects>
 </document>

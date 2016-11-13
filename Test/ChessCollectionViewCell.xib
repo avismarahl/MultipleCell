@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChessCollectionViewCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="109" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Elx-H6-SfE">
+                        <rect key="frame" x="0.0" y="0.0" width="109" height="118"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Elx-H6-SfE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2fa-Q7-tsv"/>
+                <constraint firstAttribute="bottom" secondItem="Elx-H6-SfE" secondAttribute="bottom" id="3k9-nJ-Yxv"/>
+                <constraint firstAttribute="trailing" secondItem="Elx-H6-SfE" secondAttribute="trailing" id="FYP-t1-Wtc"/>
+                <constraint firstItem="Elx-H6-SfE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pcT-Bf-Oat"/>
+            </constraints>
+            <size key="customSize" width="109" height="118"/>
+            <connections>
+                <outlet property="chessImageView" destination="Elx-H6-SfE" id="fOy-QV-G5j"/>
+            </connections>
+            <point key="canvasLocation" x="-156.5" y="-171"/>
+        </collectionViewCell>
+    </objects>
+</document>

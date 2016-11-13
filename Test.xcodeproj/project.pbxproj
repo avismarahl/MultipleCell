@@ -24,6 +24,13 @@
 		69ABCBAF1DD8309800D0D341 /* TennisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBAD1DD8309800D0D341 /* TennisTableViewCell.xib */; };
 		69ABCBB31DD830C100D0D341 /* GolfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBB11DD830C100D0D341 /* GolfTableViewCell.swift */; };
 		69ABCBB41DD830C100D0D341 /* GolfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */; };
+		69ABCBF51DD8444F00D0D341 /* ChessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBF31DD8444F00D0D341 /* ChessCollectionViewCell.swift */; };
+		69ABCBF61DD8444F00D0D341 /* ChessCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBF41DD8444F00D0D341 /* ChessCollectionViewCell.xib */; };
+		69ABCBFC1DD8494900D0D341 /* images (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBF71DD8494900D0D341 /* images (1).jpeg */; };
+		69ABCBFD1DD8494900D0D341 /* images (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBF81DD8494900D0D341 /* images (2).jpeg */; };
+		69ABCBFE1DD8494900D0D341 /* images (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBF91DD8494900D0D341 /* images (3).jpeg */; };
+		69ABCBFF1DD8494900D0D341 /* images (4).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBFA1DD8494900D0D341 /* images (4).jpeg */; };
+		69ABCC001DD8494900D0D341 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBFB1DD8494900D0D341 /* images.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		69ABCBAD1DD8309800D0D341 /* TennisTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TennisTableViewCell.xib; sourceTree = "<group>"; };
 		69ABCBB11DD830C100D0D341 /* GolfTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfTableViewCell.swift; sourceTree = "<group>"; };
 		69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfTableViewCell.xib; sourceTree = "<group>"; };
+		69ABCBF31DD8444F00D0D341 /* ChessCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChessCollectionViewCell.swift; sourceTree = "<group>"; };
+		69ABCBF41DD8444F00D0D341 /* ChessCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChessCollectionViewCell.xib; sourceTree = "<group>"; };
+		69ABCBF71DD8494900D0D341 /* images (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (1).jpeg"; sourceTree = "<group>"; };
+		69ABCBF81DD8494900D0D341 /* images (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (2).jpeg"; sourceTree = "<group>"; };
+		69ABCBF91DD8494900D0D341 /* images (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (3).jpeg"; sourceTree = "<group>"; };
+		69ABCBFA1DD8494900D0D341 /* images (4).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (4).jpeg"; sourceTree = "<group>"; };
+		69ABCBFB1DD8494900D0D341 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 		69ABCB691DD8278700D0D341 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				69ABCC011DD8495100D0D341 /* Assets */,
 				69ABCBA41DD82E8800D0D341 /* Application */,
 				69ABCBA11DD82E6B00D0D341 /* Views */,
 				69ABCBA01DD82E6500D0D341 /* ViewControllers */,
@@ -173,6 +188,7 @@
 		69ABCBA11DD82E6B00D0D341 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69ABCBF11DD8442800D0D341 /* CollectionViewCell */,
 				69ABCB6E1DD8278700D0D341 /* Main.storyboard */,
 				69ABCBA21DD82E6F00D0D341 /* TableViewCells */,
 			);
@@ -225,6 +241,35 @@
 				69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */,
 			);
 			name = GolfTableViewCell;
+			sourceTree = "<group>";
+		};
+		69ABCBF11DD8442800D0D341 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				69ABCBF21DD8442E00D0D341 /* ChessCollectionViewCell */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		69ABCBF21DD8442E00D0D341 /* ChessCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				69ABCBF31DD8444F00D0D341 /* ChessCollectionViewCell.swift */,
+				69ABCBF41DD8444F00D0D341 /* ChessCollectionViewCell.xib */,
+			);
+			name = ChessCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		69ABCC011DD8495100D0D341 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				69ABCBFB1DD8494900D0D341 /* images.jpeg */,
+				69ABCBF71DD8494900D0D341 /* images (1).jpeg */,
+				69ABCBF81DD8494900D0D341 /* images (2).jpeg */,
+				69ABCBF91DD8494900D0D341 /* images (3).jpeg */,
+				69ABCBFA1DD8494900D0D341 /* images (4).jpeg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,11 +379,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ABCBFD1DD8494900D0D341 /* images (2).jpeg in Resources */,
 				69ABCBB41DD830C100D0D341 /* GolfTableViewCell.xib in Resources */,
 				69ABCB751DD8278700D0D341 /* LaunchScreen.storyboard in Resources */,
+				69ABCBFE1DD8494900D0D341 /* images (3).jpeg in Resources */,
 				69ABCB9B1DD827CA00D0D341 /* ChessTableViewCell.xib in Resources */,
+				69ABCC001DD8494900D0D341 /* images.jpeg in Resources */,
+				69ABCBFC1DD8494900D0D341 /* images (1).jpeg in Resources */,
 				69ABCB721DD8278700D0D341 /* Assets.xcassets in Resources */,
 				69ABCBAF1DD8309800D0D341 /* TennisTableViewCell.xib in Resources */,
+				69ABCBFF1DD8494900D0D341 /* images (4).jpeg in Resources */,
+				69ABCBF61DD8444F00D0D341 /* ChessCollectionViewCell.xib in Resources */,
 				69ABCB701DD8278700D0D341 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +418,7 @@
 				69ABCBAE1DD8309800D0D341 /* TennisTableViewCell.swift in Sources */,
 				69ABCB6D1DD8278700D0D341 /* ViewController.swift in Sources */,
 				69ABCB6B1DD8278700D0D341 /* AppDelegate.swift in Sources */,
+				69ABCBF51DD8444F00D0D341 /* ChessCollectionViewCell.swift in Sources */,
 				69ABCBAA1DD82FDB00D0D341 /* Tennis.swift in Sources */,
 				69ABCB9D1DD82DC600D0D341 /* FeedDisplayable.swift in Sources */,
 				69ABCBA81DD82FC000D0D341 /* Golf.swift in Sources */,
