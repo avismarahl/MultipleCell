@@ -16,4 +16,12 @@ struct Golf : FeedDisplayable {
     }
     var name : String
     var description : String
+    
+    static func golfModels() -> [Golf] {
+        var golfModels = [Golf]()
+        golfModels.append(Golf(name: "Golf1", description: "This is aweso234me"))
+        golfModels.append(Golf(name: "Golf12", description: "This is awesom23e"))
+        golfModels.append(Golf(name: "Golf13", description: "This is awesome232"))
+        return golfModels
+    }
 }
