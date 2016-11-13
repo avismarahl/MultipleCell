@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ChessTableViewCell: UITableViewCell,GameCellDisplayable {
+class ChessTableViewCell: UITableViewCell {
     
     @IBOutlet weak var label : UILabel!
     @IBOutlet weak var collectionView : UICollectionView!
     
-    
-    weak var delegate : ChessTableViewCellDelegate?
+    var chess : Chess!
+
     
     static func nib() -> UINib {
         return UINib(nibName: "ChessTableViewCell", bundle: nil)
@@ -40,31 +40,16 @@ class ChessTableViewCell: UITableViewCell,GameCellDisplayable {
 extension ChessTableViewCell : UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChessCollectionViewCell.cellIdentifier(), for: indexPath) as! ChessCollectionViewCell
-        self.delegate?.chessTableViewCell(chessTableViewCell: self, configure: cell, at: indexPath)
+        cell.chessImageView.image = UIImage(named:self.chess.imageNames[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let delegate = self.delegate else {
-            return 0
-        }
-        return delegate.numberOfItemsInCollectionViewInChessTableViewCell(chessTableViewCell: self)
+        return self.chess.imageNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.chessTableViewCell(chessTableViewCell: self, didSelectItemAt: indexPath)
+        
     }
 }
 
-protocol ChessTableViewCellDelegate : class {
-    func numberOfItemsInCollectionViewInChessTableViewCell(chessTableViewCell : ChessTableViewCell) -> Int
-    func chessTableViewCell(chessTableViewCell : ChessTableViewCell, configure chessCollectionViewCell : ChessCollectionViewCell, at indexPath : IndexPath)
-    func chessTableViewCell(chessTableViewCell : ChessTableViewCell, didSelectItemAt indexPath : IndexPath)
-}
-
-
-
-protocol GameCellDisplayable {
-    static func nib() -> UINib
-    static func cellIdentifier() -> String
-}

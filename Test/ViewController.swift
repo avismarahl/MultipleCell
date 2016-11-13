@@ -56,8 +56,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
             let chess = feedDisplayable as! Chess
             let cell = tableView.dequeueReusableCell(withIdentifier: ChessTableViewCell.cellIdentifier()) as! ChessTableViewCell
             self.configure(chessTableViewCell: cell, chess: chess)
-            cell.delegate = self
-            cell.collectionView.reloadData()
+            cell.chess = chess
             return cell
         case .golf:
             let golf = feedDisplayable as! Golf
@@ -91,24 +90,4 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
     
 }
 
-extension ViewController : ChessTableViewCellDelegate {
-    func numberOfItemsInCollectionViewInChessTableViewCell(chessTableViewCell: ChessTableViewCell) -> Int {
-        let indexPath = self.tableView.indexPathForRow(at: chessTableViewCell.center)!
-        let chess = self.feedDisplayable[indexPath.row] as! Chess
-        return chess.imageNames.count
-    }
-    
-    func chessTableViewCell(chessTableViewCell: ChessTableViewCell, didSelectItemAt indexPath: IndexPath) {
-        
-    }
-    
-    //frame -> center
-    
-    func chessTableViewCell(chessTableViewCell: ChessTableViewCell, configure chessCollectionViewCell: ChessCollectionViewCell, at indexPath: IndexPath) {
-        let tableViewIndexPath = self.tableView.indexPathForRow(at: chessTableViewCell.center)!
-        let chess = self.feedDisplayable[tableViewIndexPath.row] as! Chess
-        chessCollectionViewCell.chessImageView.image = UIImage(named: chess.imageNames[indexPath.row])
-    }
-    
-}
 
