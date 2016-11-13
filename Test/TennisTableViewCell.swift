@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TennisTableViewCell: UITableViewCell {
+class TennisTableViewCell: UITableViewCell,GameCellDisplayable {
 
     
     @IBOutlet weak var label : UILabel!

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BadmintonTableViewCell: UITableViewCell {
+class GolfTableViewCell: UITableViewCell,GameCellDisplayable {
     
     @IBOutlet weak var label : UILabel!
 
@@ -18,11 +18,11 @@ class BadmintonTableViewCell: UITableViewCell {
     }
     
     static func nib() -> UINib {
-        return UINib(nibName: "BadmintonTableViewCell", bundle: nil)
+        return UINib(nibName: "GolfTableViewCell", bundle: nil)
     }
     
     static func cellIdentifier() -> String {
-        return "badmintonTableViewCell"
+        return "golfTableViewCell"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

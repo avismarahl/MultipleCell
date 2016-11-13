@@ -22,8 +22,8 @@
 		69ABCBAA1DD82FDB00D0D341 /* Tennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBA91DD82FDB00D0D341 /* Tennis.swift */; };
 		69ABCBAE1DD8309800D0D341 /* TennisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBAC1DD8309800D0D341 /* TennisTableViewCell.swift */; };
 		69ABCBAF1DD8309800D0D341 /* TennisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBAD1DD8309800D0D341 /* TennisTableViewCell.xib */; };
-		69ABCBB31DD830C100D0D341 /* BadmintonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBB11DD830C100D0D341 /* BadmintonTableViewCell.swift */; };
-		69ABCBB41DD830C100D0D341 /* BadmintonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBB21DD830C100D0D341 /* BadmintonTableViewCell.xib */; };
+		69ABCBB31DD830C100D0D341 /* GolfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABCBB11DD830C100D0D341 /* GolfTableViewCell.swift */; };
+		69ABCBB41DD830C100D0D341 /* GolfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		69ABCBA91DD82FDB00D0D341 /* Tennis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tennis.swift; sourceTree = "<group>"; };
 		69ABCBAC1DD8309800D0D341 /* TennisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TennisTableViewCell.swift; sourceTree = "<group>"; };
 		69ABCBAD1DD8309800D0D341 /* TennisTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TennisTableViewCell.xib; sourceTree = "<group>"; };
-		69ABCBB11DD830C100D0D341 /* BadmintonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadmintonTableViewCell.swift; sourceTree = "<group>"; };
-		69ABCBB21DD830C100D0D341 /* BadmintonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BadmintonTableViewCell.xib; sourceTree = "<group>"; };
+		69ABCBB11DD830C100D0D341 /* GolfTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfTableViewCell.swift; sourceTree = "<group>"; };
+		69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 		69ABCBA21DD82E6F00D0D341 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				69ABCBB01DD830AC00D0D341 /* BadmintonTableViewCell */,
+				69ABCBB01DD830AC00D0D341 /* GolfTableViewCell */,
 				69ABCBAB1DD8308600D0D341 /* TennisTableViewCell */,
 				69ABCBA31DD82E7900D0D341 /* ChessTableViewCell */,
 			);
@@ -218,13 +218,13 @@
 			name = TennisTableViewCell;
 			sourceTree = "<group>";
 		};
-		69ABCBB01DD830AC00D0D341 /* BadmintonTableViewCell */ = {
+		69ABCBB01DD830AC00D0D341 /* GolfTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				69ABCBB11DD830C100D0D341 /* BadmintonTableViewCell.swift */,
-				69ABCBB21DD830C100D0D341 /* BadmintonTableViewCell.xib */,
+				69ABCBB11DD830C100D0D341 /* GolfTableViewCell.swift */,
+				69ABCBB21DD830C100D0D341 /* GolfTableViewCell.xib */,
 			);
-			name = BadmintonTableViewCell;
+			name = GolfTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ABCBB41DD830C100D0D341 /* BadmintonTableViewCell.xib in Resources */,
+				69ABCBB41DD830C100D0D341 /* GolfTableViewCell.xib in Resources */,
 				69ABCB751DD8278700D0D341 /* LaunchScreen.storyboard in Resources */,
 				69ABCB9B1DD827CA00D0D341 /* ChessTableViewCell.xib in Resources */,
 				69ABCB721DD8278700D0D341 /* Assets.xcassets in Resources */,
@@ -370,7 +370,7 @@
 				69ABCBAA1DD82FDB00D0D341 /* Tennis.swift in Sources */,
 				69ABCB9D1DD82DC600D0D341 /* FeedDisplayable.swift in Sources */,
 				69ABCBA81DD82FC000D0D341 /* Golf.swift in Sources */,
-				69ABCBB31DD830C100D0D341 /* BadmintonTableViewCell.swift in Sources */,
+				69ABCBB31DD830C100D0D341 /* GolfTableViewCell.swift in Sources */,
 				69ABCBA61DD82EB100D0D341 /* Chess.swift in Sources */,
 				69ABCB991DD827B800D0D341 /* ChessTableViewCell.swift in Sources */,
 			);

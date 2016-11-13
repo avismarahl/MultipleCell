@@ -22,7 +22,7 @@ struct Chess : FeedDisplayable {
     static func chessModels() -> [Chess] {
         var chessModels = [Chess]()
         
-        chessModels.append(Chess(name: "chess 1", description: "This is dkjfsdkfjdsk", numberOfRounds: 3))
+        chessModels.append(Chess(name: "chess 1", description: "This is dkjfsdkfjdskaksdfadsfasdifasdfkjasdhfjkashdfjkhasjkdfhakjsdhfjkashdfkljashdfjkasdhfjkashdfkljasdhfjkashdfkjahsdfjhasjkdfhaksf", numberOfRounds: 3))
         chessModels.append(Chess(name: "chess 2", description: "This is kdjfdksff", numberOfRounds: 4))
         chessModels.append(Chess(name: "chess 3", description: "This is dfdsfre", numberOfRounds: 5))
         return chessModels

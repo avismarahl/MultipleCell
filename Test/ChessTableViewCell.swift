@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChessTableViewCell: UITableViewCell {
+class ChessTableViewCell: UITableViewCell,GameCellDisplayable {
     
     @IBOutlet weak var label : UILabel!
     
@@ -31,4 +31,9 @@ class ChessTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+}
+
+protocol GameCellDisplayable {
+    static func nib() -> UINib
+    static func cellIdentifier() -> String
 }
