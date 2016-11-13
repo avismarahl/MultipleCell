@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Golf : FeedDisplayable {
+    var type : FeedDisplayableType {
+        get {
+            return .golf
+        }
+    }
+    var name : String
+    var description : String
+}

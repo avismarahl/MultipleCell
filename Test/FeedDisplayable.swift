@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol FeedDisplayable {
+    var type : FeedDisplayableType { get }
+    var name : String { get set }
+    var description : String { get set }
+}
+
+enum FeedDisplayableType {
+    case chess,tennis,golf
+}

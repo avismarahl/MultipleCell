@@ -9,10 +9,20 @@
 import UIKit
 
 class BadmintonTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var label : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "BadmintonTableViewCell", bundle: nil)
+    }
+    
+    static func cellIdentifier() -> String {
+        return "badmintonTableViewCell"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

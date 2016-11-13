@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Tennis : FeedDisplayable {
+    var type : FeedDisplayableType {
+        get {
+            return .chess
+        }
+    }
+    var name : String
+    var description : String
+    
+    var numberOfSets : Int
+}

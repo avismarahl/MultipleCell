@@ -12,33 +12,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="IWR-rg-2n2" customClass="TestTableViewCell" customModule="Test" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="IWR-rg-2n2" customClass="ChessTableViewCell" customModule="Test" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IWR-rg-2n2" id="frD-X4-qMF">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-FX-veH">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-FX-veH">
                         <rect key="frame" x="8" y="53" width="359" height="65"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-hD-giz">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-hD-giz">
                         <rect key="frame" x="8" y="17" width="359" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ftN-x3-dmI"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ffQ-FX-veH" firstAttribute="trailing" secondItem="frD-X4-qMF" secondAttribute="trailingMargin" id="9Hn-rv-hYh"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ffQ-FX-veH" secondAttribute="bottom" constant="8.5" id="Rsw-yJ-xhx"/>
-                    <constraint firstItem="ffQ-FX-veH" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leadingMargin" id="y6x-hJ-BR7"/>
+                    <constraint firstItem="ffQ-FX-veH" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leadingMargin" id="9Es-b3-mWs"/>
+                    <constraint firstItem="ffQ-FX-veH" firstAttribute="trailing" secondItem="frD-X4-qMF" secondAttribute="trailingMargin" id="D1G-T5-Ppq"/>
+                    <constraint firstItem="ffQ-FX-veH" firstAttribute="top" secondItem="NQb-hD-giz" secondAttribute="bottom" constant="15" id="QoK-gA-vUS"/>
+                    <constraint firstItem="NQb-hD-giz" firstAttribute="leading" secondItem="frD-X4-qMF" secondAttribute="leadingMargin" id="TVR-vL-XWA"/>
+                    <constraint firstItem="NQb-hD-giz" firstAttribute="trailing" secondItem="frD-X4-qMF" secondAttribute="trailingMargin" id="WjL-eb-i4T"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ffQ-FX-veH" secondAttribute="bottom" constant="8.5" id="fTA-aH-VKO"/>
+                    <constraint firstItem="NQb-hD-giz" firstAttribute="top" secondItem="frD-X4-qMF" secondAttribute="topMargin" constant="9" id="r3h-bt-cz2"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="ffQ-FX-veH" id="mV0-2I-O50"/>
+            </connections>
             <point key="canvasLocation" x="-144.5" y="-252.5"/>
         </tableViewCell>
     </objects>

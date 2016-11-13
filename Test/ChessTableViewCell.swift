@@ -13,11 +13,11 @@ class ChessTableViewCell: UITableViewCell {
     @IBOutlet weak var label : UILabel!
     
     static func nib() -> UINib {
-        return UINib(nibName: "TestTableViewCell", bundle: nil)
+        return UINib(nibName: "ChessTableViewCell", bundle: nil)
     }
     
     static func cellIdentifier() -> String {
-        return "testTableViewCell"
+        return "chessTableViewCell"
     }
 
     override func awakeFromNib() {

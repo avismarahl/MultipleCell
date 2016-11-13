@@ -10,6 +10,17 @@ import UIKit
 
 class TennisTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var label : UILabel!
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "TennisTableViewCell", bundle: nil)
+    }
+    
+    static func cellIdentifier() -> String {
+        return "tennisTableViewCell"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
